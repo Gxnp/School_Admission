@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.4.3",
+    "node-sass": "4.5.0"
+  },
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  },
+  "scripts" : {
+    "node-sass": "node-sass --output-style compressed -o dist/css src/scss"
+}
+}

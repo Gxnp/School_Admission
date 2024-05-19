@@ -1,0 +1,174 @@
+*{
+    
+    font-family:'Kanit';
+    
+}
+body{
+    width: 100%;
+    
+    background-image:url(Untitled\ design\ \(1\).gif);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.content{
+    width: 100%;
+    text-align: center;
+    color: aliceblue;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+@keyframes fade-up {
+          0% {
+             opacity: 0; 
+             transform: translateY(30px) scale(0.9);
+            }
+          100% { opacity: 1; 
+            transform:translateY(0px) scale(1);
+        }
+        }
+
+.content h1{
+        animation: fade-up 0.5s;
+      }
+
+.logo{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 230px;
+}
+
+
+
+
+
+
+
+
+  
+  
+  .box {
+    animation: fade-up 0.5s;
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow:
+    0 1.4px 1.7px rgba(0, 0, 0, 0.017),
+    0 3.3px 4px rgba(0, 0, 0, 0.024),
+    0 6.3px 7.5px rgba(0, 0, 0, 0.03),
+    0 11.2px 13.4px rgba(0, 0, 0, 0.036),
+    0 20.9px 25.1px rgba(0, 0, 0, 0.043),;
+    
+    
+    .hide { opacity: 0; }
+    
+    .frame {
+      position: absolute;
+      border: 1px solid #fff;
+      z-index: 2;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    
+    h2, p {
+      position: absolute;
+      color: #fff;
+      z-index: 2;
+      width: 100%;
+      transition: opacity 0.2s, transform 0.3s;
+    }
+    
+    h2 {
+      font-weight: 500;
+      font-size: 22px;
+      margin-bottom: 0;
+      letter-spacing: 1px;
+    }
+    
+    p {
+      bottom: 0;
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+    
+    &:hover {
+      transition: all .3s ease-in-out;
+    }
+    
+    &:hover:before {
+      transition: all .3s ease-in-out;
+    }
+    
+    img {
+      position:relative;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      transition: all .3s ease-in-out;
+      
+      &:hover {
+        transition: all .3s ease-in-out;
+      }
+      
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  .vintage {
+    h2 { 
+      top: 50%;
+      transform: translate3d(0, 60px, 0);
+      text-align: center; 
+    }
+    
+    p { 
+      opacity: 0;
+      bottom: 0;
+      transform: translate3d(0, -10px, 0);
+      font-size: 14px;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+    
+    &:before {
+      content:'';
+      position: absolute;
+      width: 100%;
+      height: 35%;
+      background: linear-gradient(to bottom, rgba(72,76,97,0) 0%, rgba(0, 0, 0, 0.8) 100%);
+      z-index: 2;
+      bottom: -100%;
+      left: 0;
+    }
+    
+    &:hover:before {
+      bottom: 0;
+    }
+    
+    &:hover {
+      h2 {
+        bottom: 40px;
+        transform: translate3d(0, 20px, 0);
+      }
+      
+      p {
+        opacity: 1;
+        transform: translate3d(0, -30px, 0);
+      }
+    }
+  }
+  
